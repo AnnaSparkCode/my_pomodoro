@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="fresh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🍏My Pomodoro Timer </title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer> </script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="data:,🍏">
+
+    </head>
+
+    <body>
+
+        <div class="settings-top-bar">
+
+            <select name="Theme" id="theme-selected">
+                <option value="fresh">Fresh</option>
+                <option value="mist">Mist</option>
+                <option value="chill">Chill</option>
+                <option value="sci-fi">Sci-fi</option>
+                <option value="vintage">Vintage</option>
+
+            </select>
+
+
+            <div>
+                <button class="custom-time-setting">Settings</button>
+
+            </div>
+
+        </div>
+
+        <div id="setting-pop">
+            <div class="dropdown-container">
+                <label for="number-select">Pomodoro:</label>
+                <!-- The select tag stays empty; JavaScript will fill it -->
+                <select id="number-select">
+                    <option value="">-- mins --</option>
+                </select>
+
+            </div>
+
+            <div class="dropdown-container">
+                <label for="short-break">Short Break:</label>
+                <!-- The select tag stays empty; JavaScript will fill it -->
+                <select id="short-break">
+                    <option value="">-- mins --</option>
+                </select>
+
+            </div>
+
+            <div class="dropdown-container">
+                <label for="long-break">Long Break:</label>
+                <!-- The select tag stays empty; JavaScript will fill it -->
+                <select id="long-break">
+                    <option value="">-- mins --</option>
+                </select>
+
+            </div>
+
+            <div>
+                <button id="custom-time">Apply</button>
+
+                <button id="close-settings">Close</button>
+            </div>
+            
+
+        </div>
+
+        <div class="timer-box">
+            <div class="top-of-box">
+                <button id="pomodoro-btn">Pomodoro</button>
+                <button id="short-break-btn">Short Break</button>
+                <button id="long-break-btn">Long Break</button>
+            </div>
+
+            <div class="time-display">88:88</div>
+
+            <div class="bottom-of-box">
+                <button id="start-pause-btn" class="start">Start</button>
+                <button id="reset-btn">Reset</button>
+
+            </div>
+
+        </div>            
+
+    </body>
+
+</html>

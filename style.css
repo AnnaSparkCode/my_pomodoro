@@ -1,0 +1,214 @@
+
+
+
+:root, [data-theme="fresh"] {
+    --bg-pic: url("theme_images/fresh.jpg");
+    --bg-color: rgba(248, 110, 50, 0.814);
+    --text-color: rgb(13, 74, 72);
+    --card-bg: rgb(187, 255, 0);
+    --accent-color: rgb(8, 38, 161);
+}
+
+/* 2. Mist Theme */
+    [data-theme="mist"] {
+    --bg-pic: url("theme_images/mist.jpg");
+    --bg-color: rgba(216, 144, 85, 0.764);
+    --text-color: #f5f5f5;
+    --card-bg: rgb(180, 202, 156);
+    --accent-color: rgb(111, 29, 6);
+}
+
+/* 3. Chill Theme */
+    [data-theme="chill"] {
+    --bg-pic: url("theme_images/chill.jpg");
+    --bg-color: rgba(110, 207, 209, 0.764);
+    --text-color: rgb(142, 29, 76);
+    --card-bg: rgb(238, 201, 158);
+    --accent-color: rgb(108, 6, 103);
+}
+
+/* 4. Sci-fi Theme */
+    [data-theme="sci-fi"] {
+    --bg-pic: url("theme_images/sci-fi.jpg");
+    --bg-color: rgba(37, 31, 56, 0.885);
+    --text-color: rgb(200, 249, 115);
+    --card-bg: rgb(214, 248, 133);
+    --accent-color: rgb(252, 33, 33);
+}
+
+/* 5. Vintage Theme */
+    [data-theme="vintage"] {
+    --bg-pic: url("theme_images/vintage.jpg");
+    --bg-color: rgba(137, 187, 88, 0.764); 
+    --text-color: rgb(107, 62, 16);
+    --card-bg: rgb(250, 221, 240);
+    --accent-color: rgb(40, 80, 107);
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s; /* Smooth theme transition */
+}
+
+.settings-top-bar{
+    margin-top: 14px;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: greenyellow; */
+    position: relative;
+    justify-content: space-between;
+    width: 390px;
+    
+}
+
+.custom-time-setting{
+    padding: 14px;
+    margin-top: 17px;
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 7%;
+    border: 1px solid rgb(7, 2, 44);
+}
+.custom-time-setting:hover{
+    box-shadow: 3px 3px 7px rgb(31, 39, 74);
+}
+#theme-selected{
+    padding: 14px;
+    margin: 17px 17px 42px 7px;
+    font-size: 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 7%;
+    border: 1px solid rgb(7, 2, 44);
+}
+
+
+.timer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 37px ;
+    margin: 7px 17px;
+    border-radius: 4%;
+    background-image: var(--bg-pic);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.timer-box div{
+    padding: 7px 14px;
+}
+
+
+@media screen and (min-width: 700px) {
+    .top-of-box button{
+    padding: 7px;
+    margin: 3px 7px 48px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(7, 2, 44);
+    background-color: rgba(255, 220, 176, 0.48);
+    border-radius: 4%;
+    border: 1px solid rgb(7, 2, 44) ;
+
+}
+}
+@media screen and (max-width: 699px) {
+    .top-of-box button{
+        padding: 3px;
+        margin: 3px 1px 48px 1px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(7, 2, 44);
+        background-color: rgba(255, 220, 176, 0.48);
+        border-radius: 4%;
+        border: 1px solid rgb(7, 2, 44) ;
+
+    }
+    .top-of-box{
+        width: 307px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.top-of-box button:hover{
+    
+    background-color: rgba(244, 241, 224, 0.589);
+    
+}
+
+.time-display{
+    font-size: 5rem;
+    background-color: rgba(255, 220, 176, 0.38);
+    border-radius: 7%;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+.bottom-of-box button{
+    padding: 7px 24px;
+    margin: 48px 7px 7px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(7, 2, 44);
+    background-color: rgba(255, 220, 176, 0.48);
+    border-radius: 7%;
+    border: 1px solid rgb(7, 2, 44) ;
+
+}
+
+.bottom-of-box button:hover{
+   
+    background-color: rgba(244, 241, 224, 0.589);
+     
+}
+
+
+
+#setting-pop{
+    width: 100px;
+    background-color: rgb(249, 182, 250);
+    padding: 7px;
+    margin: 4px;
+    z-index: 50;
+    position: absolute;
+    display: none;
+    top: 40px;
+    width: 170px;
+
+    /* padding: 20px; */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 17px;
+    border: 1px solid var(--text-color);
+
+}
+
+
+
+.dropdown-container {
+    margin-bottom: 7px;
+    text-align: center;
+    
+}
+
+.top-of-box button.active{
+    background-color: var(--card-bg);
+    color: var(--accent-color);
+    box-shadow: 3px 3px 7px var(--accent-color);
+}
+
+
