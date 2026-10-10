@@ -1,7 +1,10 @@
 
-
-
 # 🍏 Pomodoro Timer
+
+**Live Demo:** [Try My Pomodoro Timer](https://chic-fox-147a66.netlify.app/)
+
+**Source Code:** [View on GitHub](https://github.com/AnnaSparkCode/my_pomodoro)
+
 
 A customizable Pomodoro timer built with **HTML, CSS, and vanilla JavaScript**.
 
